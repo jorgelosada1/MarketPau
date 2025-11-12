@@ -1,0 +1,257 @@
+.seller-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow-y: auto;
+  z-index: 999;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.seller-main {
+  width: 80%; 
+}
+
+.seller-close {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
+
+.seller-banner {
+  background: #FF6B35;
+  color: #fff;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.create-btn {
+  background: #fff;
+  color: #FF6B35;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.create-btn:hover {
+  background: #f7f7f7;
+}
+
+.seller-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.seller-card {
+  background: #fff;
+  border: 1px solid #ffe2c2;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.seller-card h3 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.seller-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+.seller-steps {
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.seller-steps h2 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.seller-steps p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.number {
+  background: #FF6B35;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+
+.sellerForm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+  padding: 1rem; 
+}
+
+.sellerForm-modal {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 90vh; 
+  overflow-y: auto; 
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  animation: scaleIn 0.25s ease;
+  scrollbar-width: thin;
+  scrollbar-color: #ff6b35 #f1f1f1;
+}
+
+.sellerForm-modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sellerForm-modal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+.sellerForm-modal::-webkit-scrollbar-thumb {
+  background: #ff6b35;
+  border-radius: 8px;
+}
+
+.sellerForm-modal::-webkit-scrollbar-thumb:hover {
+  background: #e65d2f;
+}
+
+.sellerForm-modal h2 {
+  text-align: center;
+  color: #FF6B35;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.sellerForm-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.sellerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.sellerForm label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.sellerForm input,
+.sellerForm textarea {
+  margin-top: 4px;
+  padding: 0.55rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  transition: border-color 0.2s ease;
+}
+
+.sellerForm input:focus,
+.sellerForm textarea:focus {
+  border-color: #FF6B35;
+}
+
+.sellerForm textarea {
+  resize: none;
+  min-height: 60px;
+}
+
+.checkbox-label {
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+}
+
+.sellerForm-submit {
+  background: #FF6B35;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sellerForm-submit:hover {
+  background: #e65d2f;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.93); }
+  to { opacity: 1; transform: scale(1); }
+}
