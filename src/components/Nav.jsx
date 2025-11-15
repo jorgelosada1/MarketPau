@@ -50,7 +50,7 @@ function Nav() {
         </div>
         <div className="NavUp_Letter">
           <div>Descargar la App</div>
-          <div onClick={() => openModal("seller")} className="clickable">Vender</div>
+          <div onClick={() => openModal("seller")} className="clickable">Registrar Negocio</div>
         </div>
       </div>
 
@@ -108,11 +108,13 @@ function Nav() {
       <hr />
 
       <div className={`NavLinks ${menuOpen ? 'active' : ''}`}>
-        <a href="#">Ofertas</a>
+        <a onClick={() => openModal("seller")} className="clickable">Registrar Negocio</a>
         <a href="#">Historias de Vida</a>
         <a href="#">Formación</a>
-        <a onClick={() => openModal("seller")} className="clickable">Vender</a>
-        <a href="#">Ayuda</a>
+        <a href="#">FAQ</a>
+        <a href="#">Quienes Somos</a>
+        
+        
       </div>
       <hr />
 
