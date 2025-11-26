@@ -111,6 +111,9 @@ function Nav() {
         <a onClick={() => openModal("seller")} className="clickable">Registar Negocio</a>
         <a href="#">Historias de Vida</a>
         <a href="#">Formación</a>
+        <a href="#">FAQ</a>
+        <a href="#">Quienes Somos</a>
+        
       </div>
       <hr />
 
