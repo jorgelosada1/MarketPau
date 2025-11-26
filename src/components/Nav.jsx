@@ -50,7 +50,7 @@ function Nav() {
         </div>
         <div className="NavUp_Letter">
           <div>Descargar la App</div>
-          <div onClick={() => openModal("seller")} className="clickable">Vender</div>
+          <div onClick={() => openModal("seller")} className="clickable">Registrar Negocio</div>
         </div>
       </div>
 
@@ -108,11 +108,9 @@ function Nav() {
       <hr />
 
       <div className={`NavLinks ${menuOpen ? 'active' : ''}`}>
-        <a href="#">Ofertas</a>
+        <a onClick={() => openModal("seller")} className="clickable">Registar Negocio</a>
         <a href="#">Historias de Vida</a>
         <a href="#">Formación</a>
-        <a onClick={() => openModal("seller")} className="clickable">Vender</a>
-        <a href="#">Ayuda</a>
       </div>
       <hr />
 
@@ -120,9 +118,9 @@ function Nav() {
         <div className="modal-overlay">
           <div className="modal-content">
             <button className="close-btn" onClick={closeModal}>✖</button>
-            <Login 
-              onSwitchToRegister={() => openModal("register")} 
-              onLoginSuccess={handleLoginSuccess} 
+            <Login
+              onSwitchToRegister={() => openModal("register")}
+              onLoginSuccess={handleLoginSuccess}
             />
           </div>
         </div>

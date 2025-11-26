@@ -12,6 +12,7 @@ import Pagina from "./components/Pagina";
 import ScrollToTop from "./components/ScrollToTop";
 import { FaWhatsapp } from "react-icons/fa";
 import "./app.css";
+import Banner from "./components/Banner";
 
 import { AuthProvider } from "./context/AuthContext"
 
@@ -32,6 +33,7 @@ function App() {
                 <>
                   <Nav />
                   <Body />
+                  <Banner />
                   <Marcas />
                   <Category />
                   <Footer />
